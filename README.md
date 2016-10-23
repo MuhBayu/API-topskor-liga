@@ -11,5 +11,9 @@ Fitur :
 <li>Liga Spanyol</li>
 <ul>
 
+Untuk Pilihan Host Server :
+- bayuu.net
+- bayyu.me
+- bayyu.cf
 
 <h1><a href="http://bayyu.me/widget/widget-top-skor.php" target="_blank">DEMO</a></h1>
