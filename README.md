@@ -9,7 +9,7 @@ Fitur :
 <li>Liga Inggris</li>
 <li>Liga Italia</li>
 <li>Liga Spanyol</li>
-<ul>
+</ul>
 
 Untuk Pilihan Host Server :
 - bayuu.net
