@@ -1,6 +1,6 @@
 # API-topskor-liga
 
-Penggunaan API untuk cek Top-Skor Liga
+Penggunaan API untuk cek Top-Skor Liga dengan AJAX
 
 Fitur :
 
