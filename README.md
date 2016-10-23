@@ -11,12 +11,15 @@ Fitur :
 <li>Liga Spanyol</li>
 </ul>
 
-Untuk Pilihan host Server :
+Untuk Pilihan host Server(alternatif) :
 - bayuu.net
 - bayyu.me
 - bayyu.cf
 
-Link API :
-$host . /api/cek-topskor?liga=inggris
+Parameters :
+- ?liga=champions
+- ?liga=inggris
+- ?liga=spanyol
+- ?liga=italia
 
 <h1><a href="http://bayyu.me/widget/widget-top-skor.php" target="_blank">DEMO</a></h1>
