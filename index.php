@@ -56,7 +56,7 @@
 </table>
 
 <footer class="bd-footer text-muted" style="margin-top: 30px; font-size: 9pt;">
-	<p>Widget by <a href="//bayyu.me/" target="_blank"> bayyu.me</a></p>
+	<p>Widget by <a href="http://bayuu.net/" target="_blank"> bayuu.net</a></p>
 </footer>
 </div>
 </body>
