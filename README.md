@@ -11,10 +11,6 @@ Fitur :
 <li>Liga Spanyol</li>
 </ul>
 
-Untuk Pilihan host Server(alternatif) :
-- bayuu.net
-- bayyu.me
-- bayyu.cf
 
 Parameters :
 - ?liga=champions
