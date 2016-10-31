@@ -2,7 +2,7 @@
 
 Penggunaan API untuk cek Top-Skor Liga dengan AJAX
 
-Fitur :
+Fitur Liga :
 
 <ul>
 <li>Liga Champions</li>
@@ -11,16 +11,30 @@ Fitur :
 <li>Liga Spanyol</li>
 </ul>
 
+Fitur Statistik :
+
+<ul>
+<li>Tokskor</li>
+<li>Assist</li>
+</ul>
+
 
 Parameters :
+Liga
 - ?liga=champions
 - ?liga=inggris
 - ?liga=spanyol
 - ?liga=italia
+
+Statistik
+- ?stat=topskor
+- ?stat=assist
+
+ApiKey
 - ?apikey=YOUR API KEY
 
 Contoh : 
-http://bayuu.net/api/cek-topskor?liga=spanyol&apikey=MASUKAN_API_KEY_ANDA
+http://bayuu.net/api/cek-topskor?liga=spanyol&stat=topskor&apikey=MASUKAN_API_KEY_ANDA
 
 
 <h2>Bagaimana cara mendapatkan API-KEY ?</h2>
