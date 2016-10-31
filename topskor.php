@@ -8,14 +8,18 @@ function customError($errno, $errstr) {
     header('Content-type: application/json');
     $output['status']       = 'Gagal';
     $output['pesan']        = 'Error [' . $errno . ']';
-    echo (json_encode($output, JSON_PRETTY_PRINT));
+    print (json_encode($output, JSON_PRETTY_PRINT));
   die();
 } 
 
 set_error_handler("customError");
 if(isset($_POST['liga'])) {
-$host = 'http://bayuu.net'; 
+//** --
+$host = 'http://bayuu.net';
+$stat = 'topskor'; // STATISTIK : topskor / assist
 $key  = 'YOUR API-KEY HERE'; // Masukan API KEY yang ada punya
+//**
+	
 switch ($_POST['liga']) {
 	case 'inggris':
 		$server	=	$host . "/api/cek-topskor?liga=inggris";
@@ -30,11 +34,11 @@ switch ($_POST['liga']) {
 		$server	=	$host . "/api/cek-topskor?liga=champions";
 		break;
 }
-  $data = file_get_contents($server . '&apikey=' . $key);
+  $data = file_get_contents($server . '&stat=' . $stat . '&apikey=' . $key);
   $hasil = json_decode($data, true);
   if($hasil['status'] == 'Error') { echo "<h5>Maaf, terjadi kesalahan..</h5>
   	<h5>Pesan Error: <b>" . $hasil['pesan'] . "</b>"; exit;}
-  foreach ($hasil['top_skor'] as $key => $value) {
+  foreach ($hasil['top_skor'] as $key => $value) :
  	?>
 
  	<tr>
@@ -45,7 +49,7 @@ switch ($_POST['liga']) {
  	</tr>
 
 <?php
-  	}
-	}
+  	endforeach;
+}
 ?>
 <script>$('#komp').text('<?php echo $hasil['kompetisi']; ?>');</script>
