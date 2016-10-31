@@ -41,4 +41,4 @@ http://bayuu.net/api/cek-topskor?liga=spanyol&stat=topskor&apikey=MASUKAN_API_KE
 
 <a href="http://bayuu.net/api/">Klik disini..</a>
 
-<h1><a href="http://bayyu.me/widget/widget-top-skor.php" target="_blank">DEMO</a></h1>
+<h1><a href="http://bayuu.net/widget/widget-top-skor.php" target="_blank">DEMO</a></h1>
