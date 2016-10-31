@@ -36,9 +36,9 @@ switch ($_POST['liga']) {
 }
   $data = file_get_contents($server . '&stat=' . $stat . '&apikey=' . $key);
   $hasil = json_decode($data, true);
-  if($hasil['status'] == 'Error') { echo "<h5>Maaf, terjadi kesalahan..</h5>
+  if($hasil['status'] != 'Success') { echo "<h5>Maaf, terjadi kesalahan..</h5>
   	<h5>Pesan Error: <b>" . $hasil['pesan'] . "</b>"; exit;}
-  foreach ($hasil['top_skor'] as $key => $value) :
+  foreach ($hasil['data'] as $key => $value) :
  	?>
 
  	<tr>
